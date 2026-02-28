@@ -1,7 +1,7 @@
 import math
 class Circle:
   def __init__(self, radius):
-    self.__radius = radius
+    self.__radius = radius # 주의! 이렇게 되면 외부에서 사용할 수 없는 변수가 됨!
   def get_circumstance(self):
     return 2 * 3.14 * self.__radius
   def get_area(self):
